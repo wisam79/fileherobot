@@ -68,7 +68,7 @@ def upload_video(client, message,file_path):
         chat_id=message.chat.id,
         video=file_path,
         reply_to_message_id=message.message_id,
-        caption="Uploaded by @fileherobot",
+        caption="Uploaded by @wsh22",
         progress=progress_bar_f,
         progress_args=(prev_message,time1,direction),
         thumb=file_path_thumb
@@ -111,7 +111,7 @@ def progress_bar_f(current,total,prev_message,time1,direction):
         )
 
 def start_msg_handler_f(client,message):
-    msg="hii.. I am FileHerobot \n"
+    msg="مرحبا #name_user  \n"
     msg=msg+"> Can send Send Video \n"
     msg=msg+"> Can Send Files to telegram using Direct Links"
     message.reply_text(msg)
